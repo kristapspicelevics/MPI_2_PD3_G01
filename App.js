@@ -35,7 +35,7 @@ export default function App() {
      try {
       let lat = location.coords.latitude;
       let long = location.coords.longitude;   
-      const response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid=16c5c23bc85939d290e8fc0072be1ecf&units=metric');
+      const response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid= &units=metric');
       const json = await response.json();
       setData(json);
     } catch (error) {
